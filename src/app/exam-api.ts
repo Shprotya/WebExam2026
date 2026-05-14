@@ -14,12 +14,9 @@ export class ExamApi {
 
   getCountries() {
     const url = this._siteURL
-    console.log("The data is read from: ", url);
     this._http.get<Countries[]>(url)
       .subscribe(data => {
         this.countries.set(data)
       })
-      
   }
-
 }

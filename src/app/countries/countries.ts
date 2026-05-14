@@ -15,10 +15,6 @@ export class Countries {
 
   constructor() {
     this._itemsApiService.getCountries();
-
-    for (const country of this.countries()) {
-      console.log(country.name.common)
-    }
   }
 
 }
