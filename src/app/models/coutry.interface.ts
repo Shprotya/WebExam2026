@@ -1,6 +1,6 @@
 export interface Countries {
-    Flag: string;
-    Name: string;
-    Capital: string;
+    Flag: {png: string};
+    Capital: string[];
     Independent: boolean;
+    Name: { common: string; };
 }
