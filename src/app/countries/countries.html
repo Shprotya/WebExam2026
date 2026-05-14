@@ -25,9 +25,13 @@
                     {{ val }}{{ $last ? '' : ', ' }}
                     }
                 </td>
+                @if (country.independent === true) {
                 <td>
-                    
+                    Yes
                 </td>
+                } @else {
+                <td>No</td>
+                }
             </tr>
             }
         </tbody>
