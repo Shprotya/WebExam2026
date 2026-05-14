@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ExamApi } from '../exam-api';
 import { inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -15,6 +15,10 @@ export class Countries {
 
   constructor() {
     this._itemsApiService.getCountries();
+
+    for (const country of this.countries()) {
+      console.log(country.name.common)
+    }
   }
 
 }
